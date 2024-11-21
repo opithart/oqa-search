@@ -1,0 +1,17 @@
+[build-system]
+build-backend = "hatchling.build"
+requires = ["hatchling>=1.4.1"]
+
+[tool.hatch.version]
+path = "oqa_search/__about__.py"
+
+[project]
+name = "oqa-search"
+dynamic = ["version"]
+authors = [{name = "mjdonis", email = "marina.donis@suse.com"}]
+maintainers = [{name = "mjdonis", email = "marina.donis@suse.com"}]
+description = "UV openQA helper script created to help/automate the searching phase inside openQA for a given MU"
+readme = {file="README.md", content-type="text/markdown"}
+
+[project.scripts]
+oqa-search = "oqa_search.oqa_search:main"
