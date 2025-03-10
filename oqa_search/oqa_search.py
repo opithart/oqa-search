@@ -45,6 +45,7 @@ TESTSUITE_REGEX_PATTERNS: List[str] = [
     "^.*] [0-9]+ tests OK[.].*$",
     "^.*] Tests [a-z ]+: [ 0-9]+.*$",
     "^.*] [ ]*[Passed Expectedly Failed]+[ ]*: [ 0-9]+.*$",
+    "^.*] [ ]*OK[ ]*[(][ 0-9A-Za-z]+[)].*$",
 ]
 
 LOGFILE_REGEX_PATTERN: str = "[A-Za-z-0-9]*[.]SUSE_SLE-[0-9]+[-SP0-9]*_Update[%3A-Za-z_-]*[.][a-z_0-9]+[.]log"
