@@ -41,10 +41,10 @@ TESTSUITE_REGEX_PATTERNS: List[str] = [
     "^.*] [=Tests ]*[Rr]esult: [A-Za-z]+.*$",
     "^.*[0-9]+ examples, [0-9]+ failures.*",
     "^.*] [A-Za-z#: ]*All [0-9 ]*tests [A-Za-z]+.*$",
-    "^.*[0-9][%]? [tests ]*passed,.*$",
+    "^.*[0-9][%]? [tests ]*passed[,| in].*$",
     "^.*] [0-9]+ tests OK[.].*$",
     "^.*] Tests [a-z ]+: [ 0-9]+.*$",
-    "^.*] [ ]*[Passed Expectedly Failed]+[ ]*: [ 0-9]+.*$",
+    "^.*] [ ]*[Ok Passed Expectedly Failed]+[ ]*: [ 0-9]+.*$",
     "^.*] [ ]*OK[ ]*[(][ 0-9A-Za-z]+[)].*$",
 ]
 
